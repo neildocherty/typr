@@ -1,0 +1,27 @@
+html {
+    background-color: #000;
+    color: #FFF;
+}
+
+p {
+    width: 60%;
+    margin: 0 20%;
+    font-family: 'Inconsolata', monospace;
+}
+
+.typr {
+    opacity: 0.0;
+}
+.typr.visible {
+    opacity: 1.0;
+}
+
+span.cursor {
+    border-bottom: 2px solid rgba(255,255,255,.5);
+    animation: blinkyblinker 1s linear infinite;
+}
+
+
+@keyframes blinkyblinker {
+    50% { opacity: 0.0; }
+}
